@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    font-family: "Times New Roman", serif;
+    background: #dedede;
+    color: black;
+    line-height: 1.6;
+    font-size: 23px;
+}
+
+/* Page wrapper */
+.page {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 20px 16px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.site-title {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    display: inline-flex;
+    gap: 40px;
+    font-size: 1rem;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #0000ee;
+}
+
+/* -------------------------
+   HERO: text + image + full-width line
+   ------------------------- */
+.hero {
+    display: grid;
+    grid-template-columns: 3fr 2fr;   /* text column + image column */
+    column-gap: 40px;
+    row-gap: 10px;                    /* small vertical gap between rows */
+    margin-bottom: 40px;
+}
+
+/* Text in the left column, first row */
+.hero-text {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.hero-text p {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Cow image on the right, spanning 2 rows */
+.hero-image {
+    grid-column: 2;
+    grid-row: 1 / span 2;             /* occupies rows 1 and 2 */
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Paragraph that spans full width under the text,
+   while the image continues down the right side */
+.full-width {
+    grid-column: 1 / -1;              /* span across both columns */
+    grid-row: 2;                      /* second row of the grid */
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* -------------------------
+   GALLERY: 3 columns, wide items span 2
+   ------------------------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 0;
+}
+
+.gallery-item {
+    overflow: hidden;
+    height: 260px;                     /* same height for all items */
+}
+
+/* Wide items span 2 columns (double width) */
+.gallery-item.wide {
+    grid-column: span 2;
+}
+
+/* Media fills each gallery item */
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* -------------------------
+   Responsive tweaks
+   ------------------------- */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hero-image {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 20px;
+    }
+
+    .full-width {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item.wide {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item.wide {
+        grid-column: span 1;
+    }
+}
