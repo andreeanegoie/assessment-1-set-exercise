@@ -1,75 +1,77 @@
-/* Page background */
+/*   External CSS file - rules that apply to the whole webpage. */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;                /* Removes default empty space around the page */
+  padding: 0;               /* Removes default internal spacing */
+  background-color: white;  /* Sets the whole page background to white */
+  font-family: Arial, Helvetica, sans-serif; /* Default text style */
 }
 
-/* Centered white panel */
+/* White panel in the middle of the page. */
 .page-wrapper {
-  padding: 30px 0;
+  padding: 30px 0;          /* Adds space at the top and bottom of the panel */
 }
 
 .content-card {
-  max-width: 650px;
-  margin: 0 auto 40px auto;
-  background-color: white;
-  border-radius: 30px;
-  padding: 40px 45px 60px 45px;
-  box-sizing: border-box;
+  max-width: 650px;         /* Makes sure the content doesn't stretch too wide */
+  margin: 0 auto 40px auto; /* Centers the card horizontally and adds space below it */
+  background-color: white;  /* Card background colour */
+  border-radius: 30px;      /* Soft rounded corners on the card */
+  padding: 40px 45px 60px 45px;  /* Space inside the card (top, right, bottom, left) */
+  box-sizing: border-box;   /* Prevents padding from increasing the width */
 }
 
-/* Headings */
+/*    Styles to control all headings on the page. */
 .page-header h1 {
-  font-family: "Impact", "Arial Black", sans-serif;
-  font-size: 120px;
-  line-height: 1;
-  text-align: center;
-  color: green;
-  margin: 0 0 10px 0;
+  font-family: "Impact", "Arial Black", sans-serif; /* Bold, block-style font */
+  font-size: 120px;         /* VERY large title text */
+  line-height: 1;           /* Reduces spacing between title lines */
+  text-align: center;       /* Centers the title text */
+  color: green;             /* Title colour */
+  margin: 0 0 10px 0;       /* Removes top margin, adds small bottom spacing */
 }
 
 .subtitle {
-  font-family: "Impact", "Arial Black", sans-serif;
-  font-size: 56px;
-  text-align: center;
-  color: green;
-  margin: 0 0 35px 0;
+  font-family: "Impact", "Arial Black", sans-serif; /* Same bold font */
+  font-size: 56px;          /* Large subtitle text */
+  text-align: center;       /* Centered text */
+  color: green;             /* Subtitle colour */
+  margin: 0 0 35px 0;       /* Space between subtitle and next element */
 }
 
 .section-heading {
   font-family: "Impact", "Arial Black", sans-serif;
-  font-size: 64px;
+  font-size: 64px;          /* Large section title */
   text-align: center;
   color: green;
-  margin: 50px 0 25px 0;
+  margin: 50px 0 25px 0;    /* Big space above, smaller below */
 }
 
-/* Text paragraphs */
+/*    Styling for normal reading paragraphs. */
 .text-block p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0 0 18px 0;
+  font-size: 18px;          /* Comfortable body text size */
+  line-height: 1.5;         /* Spacing between lines for easier reading */
+  margin: 0 0 18px 0;       /* Space between paragraphs */
 }
 
-/* Green "Did you know?" box */
+/*      Highlighted green box used to show */
 .fact-box {
-  background-color: green;
-  border-radius: 40px;
-  padding: 30px 40px 35px 40px;
-  margin: 40px 0;
-  color: white;
+  background-color: green;  /* Green coloured box */
+  border-radius: 40px;      /* Large rounded corners */
+  padding: 30px 40px 35px 40px; /* Space inside the box */
+  margin: 40px 0;           /* Space above and below the box */
+  color: white;             /* Makes text white for contrast */
 }
 
+/* The heading text inside the green box */
 .fact-box h3 {
   font-family: "Impact", "Arial Black", sans-serif;
-  font-size: 48px;
-  margin: 0 0 20px 0;
+  font-size: 48px;          /* Big heading for emphasis */
+  margin: 0 0 20px 0;       /* Space between heading and paragraph */
 }
 
+/* The normal text inside the green box */
 .fact-box p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0;
+  font-size: 18px;          /* Same size as body text */
+  line-height: 1.5;         /* Good readability */
+  margin: 0;                /* No bottom spacing needed here */
 }
