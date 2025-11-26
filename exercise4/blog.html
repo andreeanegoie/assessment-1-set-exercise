@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wondering Photographer – Blog</title>
+
+    <!-- Copied from main page: responsive layout meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Copied from main page: link to shared stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Copied from main page: header with divider, title, cart, nav -->
+<header class="site-header">
+
+    <div class="divider-container" aria-hidden="true">
+        <img src="images/TheDivider.png" alt="">
+    </div>
+
+    <div class="header-bar">
+        <h1 class="site-title">The Wondering Photographer</h1>
+
+        <a href="checkout.html" class="cart-link" aria-label="View basket and go to checkout">
+            🛒 <span class="cart-text">Basket</span>
+        </a>
+    </div>
+
+    <nav id="main-menu" class="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <!--  Blog marked as current page -->
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="about.html">About me</a></li>
+            <!-- Main page -Added to the secondary pages so the user can go back -->
+            <li><a href="exercise-4-web-accessibility.html">Prints for sale</a></li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<!-- Blog page will contain travel stories behind the photographs in the same matching white box-->
+<main id="main-content">
+
+    <!-- Introduction for the blog section -->
+    <section class="info-card">
+        <h2>My adventures</h2>
+        <p>
+            These entries share the stories behind some of the photos in the gallery.
+        </p>
+    </section>
+
+    <!-- Story behind the Greenland photos -->
+    <section class="info-card">
+        <h2>Greenland</h2>
+        <p>
+            These photos came from a family trip to Greenland. The coastline felt quiet and open, 
+            and the sunsets had soft colours you don’t forget. The valley shots came from an area shaped 
+            by an old glacier. The views changed every few steps and made the whole place feel special.
+        </p>
+    </section>
+
+    <!-- Story behind the New York photo -->
+    <section class="info-card">
+        <h2>New York</h2>
+        <p>
+            The bridge photo was taken on a bright day in New York. I looked up from the walkway 
+            and liked how the lines of the structure framed the sky. The city felt loud and fast, 
+            but moments like this helped slow things down.
+        </p>
+    </section>
+
+</main>
+
+<!-- Copied from main page: footer -->
+<footer class="site-footer">
+    <p>Copyright &copy; The Wondering Photographer 2018.</p>
+</footer>
+
+</body>
+</html>

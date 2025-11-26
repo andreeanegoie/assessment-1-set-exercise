@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wondering Photographer – Prints for Sale</title>
+
+    <!-- Make the layout adapt to mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Top of the page: logo, title, cart, navigation -->
+    <header class="site-header">
+
+        <!-- Decorative divider image - only visual design, hidden from screen readers -->
+        <div class="divider-container" aria-hidden="true">
+            <img src="images/TheDivider.png" alt="">
+        </div>
+
+        <!-- Row with site title on the left and cart on the right -->
+        <div class="header-bar">
+            <!-- Main site title moved to the left so I can add the Basket icon to the right -->
+            <h1 class="site-title">The Wondering Photographer</h1>
+
+            <!-- Link to checkout / basket page (not functional) moved from the corner of the first picture and made into a button-->
+            <a href="checkout.html"
+               class="cart-link"
+               aria-label="View basket and go to checkout">
+                🛒 <span class="cart-text">Basket</span>
+            </a>
+        </div>
+
+        <!-- Main navigation menu for the site -->
+        <nav id="main-menu" class="main-nav" aria-label="Main navigation">
+            <ul>
+                <!-- Link to home page -->
+                <li><a href="home.html">Home</a></li>
+
+                <!-- Link to blog page -->
+                <li><a href="blog.html">Blog</a></li>
+
+                <!-- Link to about page -->
+                <li><a href="about.html">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content of the page (intro text and photo gallery) -->
+    <main id="main-content">
+
+        <!-- Intro section that explains the purpose of the site -->
+        <section class="intro">
+            <p>
+                Welcome to my travel photography blog. Here you can explore some of the places I have visited,
+                from calm coastlines to busy city views. Each photo captures a moment that meant something to me, 
+                whether it was a quiet sunrise, an unexpected view, or a memory with family and friends. 
+                If you see an image you love, you can add a high-quality print to your basket 
+                and bring a piece of that journey into your home.
+            </p>
+        </section>
+
+        <!-- Gallery section that holds the list of photos for sale. Every image in now in a different white box, together with the
+         description and the Add to cart button to make it more user friendly -->
+        <section class="gallery" aria-label="Photo gallery of travel prints">
+            <!-- List that formats each photo item as a card -->
+            <ul class="photo-list">
+
+                <!-- 1. Ocean picture -->
+                <li class="photo-item">
+                    <!-- Figure pairs the photo with its caption -->
+                    <figure>
+                        <!-- Photo of the Greenland ocean sunset -->
+                        <img src="images/OceanPhoto.jpg"
+                             alt="Soft pastel sunset over a calm ocean at the coast of Greenland">
+
+                        <!-- Description text for this image -->
+                        <figcaption>
+                            This was from a fabulous trip to the coast of Greenland with my family.
+                            The water was lovely – but very cold!
+                        </figcaption>
+                    </figure>
+
+                    <!-- Button to add this specific print to the basket -->
+                    <button type="button"
+                            class="basket-btn"
+                            aria-label="Add Greenland ocean sunset print to basket">
+                        Add to basket
+                    </button>
+                </li>
+
+                <!-- 2. Bridge picture -->
+                <li class="photo-item">
+                    <figure>
+                        <img src="images/BridgePhoto.jpg"
+                             alt="Upward view of the Golden Gate Bridge structure against a bright blue sky">
+                        <figcaption>
+                            A picture of the Golden Gate Bridge. New York! New York!
+                        </figcaption>
+                    </figure>
+                    <button type="button"
+                            class="basket-btn"
+                            aria-label="Add Golden Gate Bridge print to basket">
+                        Add to basket
+                    </button>
+                </li>
+
+                <!-- 3. Valley picture -->
+                <li class="photo-item">
+                    <figure>
+                        <img src="images/ValleyPhoto.jpg"
+                             alt="Wide river valley in Greenland surrounded by mountains and cliffs">
+                        <figcaption>
+                            Another great photo from Greenland. It's a river valley where a glacier used to be.
+                        </figcaption>
+                    </figure>
+                    <button type="button"
+                            class="basket-btn"
+                            aria-label="Add Greenland valley print to basket">
+                        Add to basket
+                    </button>
+                </li>
+
+                <!-- 4. Waterfall picture -->
+                <li class="photo-item">
+                    <figure>
+                        <img src="images/WaterfallPhoto.jpg"
+                             alt="Tall waterfall dropping into a pool surrounded by green rocks">
+                        <figcaption>
+                            The waterfall made such a lovely sound. I could have fallen asleep!
+                        </figcaption>
+                    </figure>
+                    <button type="button"
+                            class="basket-btn"
+                            aria-label="Add waterfall print to basket">
+                        Add to basket
+                    </button>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer section at the bottom of the page -->
+    <footer class="site-footer">
+        <p>Copyright &copy; The Wondering Photographer 2018.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* GLOBAL PAGE SETTINGS
+   Set font, remove default margin, and choose background colour */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0b3cb;
+}
+
+
+/* When the skip link is focused with TAB, bring it into view */
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+/* HEADER
+   Wraps divider image, title, cart, and main navigation */
+.site-header {
+  text-align: center;
+  padding: 10px 0 20px;
+}
+
+/* Decorative divider image at the top of the page */
+.divider-container img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* HEADER BAR
+   Horizontal layout for title and cart link */
+.header-bar {
+  display: flex;                 /* Place children in a row */
+  justify-content: space-between;/* Title on left, cart on right */
+  align-items: center;           /* Vertical centring */
+  max-width: 900px;              /* Limit width of header content */
+  margin: 0 auto;                /* Centre header content on the page */
+  padding: 0 16px;
+}
+
+/* Main site title text */
+.site-title {
+  margin: 0;
+}
+
+/* CART LINK
+   Styles the basket button in the top right */
+.cart-link {
+  text-decoration: none;
+  background-color: #00c2d1;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* MAIN NAVIGATION
+   Styles for the unordered list of navigation links */
+.main-nav ul {
+  list-style: none;        /* Remove bullets */
+  padding: 0;
+  margin: 12px 0 0;
+
+  display: flex;           /* Put nav items in a row */
+  justify-content: flex-start; /* ALIGN NAV BUTTONS TO THE LEFT */
+  gap: 16px;               /* Space between items */
+
+  max-width: 900px;        /* Match header width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation links appearance */
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* MAIN CONTENT
+   General layout for the main element */
+main {
+  max-width: 700px;        /* Width of text and gallery */
+  margin: 20px auto 40px;  /* Centre main content and add bottom space */
+  padding: 0 16px;
+}
+
+/* INTRO SECTION
+   Paragraph that explains the blog */
+.intro p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* GALLERY SECTION
+   Wrapper for the list of photo cards */
+.gallery {
+  margin-top: 24px;
+}
+
+/* Remove bullets from photo list and reset spacing */
+.photo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each photo item styled as a card */
+.photo-item {
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Make the photo fill the card width */
+.photo-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Caption text under each image */
+.photo-item figcaption {
+  margin: 12px 16px 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+/* ADD TO BASKET BUTTON
+   Button style for each card */
+.basket-btn {
+  margin: 0 16px 16px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #00c2d1;
+  color: #ffffff;
+}
+
+/* Slight visual change when hovering on the button */
+.basket-btn:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER
+   Text at the bottom of the page */
+.site-footer {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  padding: 0 16px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+/* White box for home page sections */
+.info-card {
+  background-color: #fff;                 /* White background */
+  padding: 20px;                           /* Spacing inside the box */
+  border-radius: 6px;                      /* Rounded corners to match gallery cards */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Same shadow as photo cards */
+  margin-bottom: 24px;                     /* Space between boxes */
+}

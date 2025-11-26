@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Copied from main page -->
+    <meta charset="UTF-8">
+    <title>The Wondering Photographer – Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="divider-container" aria-hidden="true">
+            <img src="images/TheDivider.png" alt="">
+        </div>
+        <div class="header-bar">
+            <h1 class="site-title">The Wondering Photographer</h1>
+            <a href="checkout.html"
+               class="cart-link"
+               aria-label="View basket and go to checkout">
+                🛒 <span class="cart-text">Basket</span>
+            </a>
+        </div>
+        <nav id="main-menu" class="main-nav" aria-label="Main navigation">
+            <ul>
+                <!-- Current page (Home) -->
+                <li><a href="home.html" aria-current="page">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About me</a></li>
+
+                <!-- Main page -Added to the secondary pages so the user can go back -->
+                <li><a href="exercise-4-web-accessibility.html">Prints for sale</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- MAIN: Contains all the main content of the homepage -->
+    <main id="main-content">
+
+        <!-- Section in a white card box - to match the main page- introducing the site -->
+        <section class="intro info-card">
+            <h2>Welcome</h2>
+            <p>
+                Thank you for visiting The Wondering Photographer. Here you can order canvas prints of my favourite travel photos. 
+                On this page you can read how the prints are made, the sizes you can choose, and how your order is packed and shipped to you.
+            </p>
+        </section>
+
+        <!-- Canvas size information in a white card box -->
+        <section class="info-section info-card" aria-labelledby="canvas-sizes-heading">
+            <h2 id="canvas-sizes-heading">Canvas sizes</h2>
+            <p>
+                All prints are produced on stretched canvas and are ready to hang as soon as you open the box.
+                You can choose from these standard sizes:
+            </p>
+            <ul>
+                <li><strong>Small:</strong> 30 × 40 cm – good for narrow walls or grouped gallery walls.</li>
+                <li><strong>Medium:</strong> 40 × 60 cm – a balanced size for most rooms.</li>
+                <li><strong>Large:</strong> 60 × 90 cm – a bold statement piece for living rooms or above a bed or sofa.</li>
+            </ul>
+            <p>
+                If you are not sure which size works best, think about the width of the wall and the furniture below it. 
+                A canvas that covers roughly two thirds of the furniture width usually looks balanced.
+            </p>
+        </section>
+
+        <!-- Materials and print quality section in a white card box -->
+        <section class="info-section info-card" aria-labelledby="materials-heading">
+            <h2 id="materials-heading">Materials and print quality</h2>
+            <p>
+                The aim is to give you a print that looks rich in colour and lasts for many years.
+            </p>
+            <ul>
+                <li><strong>Canvas:</strong> 100% cotton canvas with a smooth, matte finish.</li>
+                <li><strong>Frame:</strong> Sturdy, kiln-dried wooden stretcher bars.</li>
+                <li><strong>Inks:</strong> Pigment-based, fade-resistant inks designed for long-lasting prints.</li>
+                <li><strong>Finish:</strong> Printed edge-to-edge, with the image wrapped around the sides of the frame.</li>
+            </ul>
+            <p>
+                Each canvas is checked for colour, sharpness, and marks before it leaves the studio,
+                so you receive a clean and ready-to-hang piece of wall art.
+            </p>
+        </section>
+
+        <!-- Packaging and shipping information in a white card box -->
+        <section class="info-section info-card" aria-labelledby="shipping-heading">
+            <h2 id="shipping-heading">Packaging and shipping</h2>
+            <p>
+                Your canvas is packed carefully to keep it safe on the way to you.
+            </p>
+            <ul>
+                <li>The canvas is wrapped in a protective sleeve to prevent scratches and dust.</li>
+                <li>Corner protectors are added to help avoid bumps during transport.</li>
+                <li>The wrapped canvas is placed in a strong cardboard box sized to fit the frame.</li>
+            </ul>
+            <p>
+                Orders are usually dispatched within 3–5 working days.
+                You will receive a confirmation email when your order is on the way.
+            </p>
+            <ul>
+                <li><strong>UK shipping:</strong> Tracked delivery via a national courier or Royal Mail.</li>
+                <li><strong>International shipping:</strong> Available to selected countries. Delivery times vary by location.</li>
+            </ul>
+            <p>
+               If your canvas arrives damaged, please contact me within 7 days with photos of the packaging and the print,
+                so a replacement can be arranged.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER: Information shown at the bottom of every page -->
+    <footer class="site-footer">
+        <p>Copyright &copy; The Wondering Photographer 2018.</p>
+    </footer>
+
+</body>
+</html>

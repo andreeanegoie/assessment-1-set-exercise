@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wondering Photographer – About Me</title>
+
+    <!-- Copied from main page: makes layout adapt to screen size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Copied from main page: shared stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Copied from main page: header with divider image, title, navigation -->
+<header class="site-header">
+
+    <div class="divider-container" aria-hidden="true">
+        <img src="images/TheDivider.png" alt="">
+    </div>
+
+    <div class="header-bar">
+        <h1 class="site-title">The Wondering Photographer</h1>
+
+        <a href="checkout.html" class="cart-link" aria-label="View basket and go to checkout">
+            🛒 <span class="cart-text">Basket</span>
+        </a>
+    </div>
+
+    <nav id="main-menu" class="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!--  About page marked as current -->
+            <li><a href="about.html" aria-current="page">About me</a></li>
+             <!-- Main page -Added to the secondary pages so the user can go back -->
+            <li><a href="exercise-4-web-accessibility.html">Prints for sale</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- Intoduces some infirmation about me -->
+<main id="main-content">
+
+    <!-- About section wrapped in a matching white info-card box -->
+    <section class="info-card">
+        <h2>About me</h2>
+        <p>
+            My name is Andreea. I study Computing at Bath Spa University and work part time as a Vendor Manager 
+            for a translation company based in Epsom. I live in London with my partner, and my family is in Romania,
+            so travel is a big part of my life. I enjoy visiting new places and taking photos that remind me of the 
+            moments I want to keep. This site brings together some of the views and experiences that stayed with me 
+            while travelling.
+        </p>
+    </section>
+
+</main>
+
+<!-- Copied from main page: footer with copyright -->
+<footer class="site-footer">
+    <p>Copyright &copy; The Wondering Photographer 2018.</p>
+</footer>
+
+</body>
+</html>
