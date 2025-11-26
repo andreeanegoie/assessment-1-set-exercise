@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>J's Gallery</title>
-   <!-- Initialise screen depending on screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles_2.css">
 </head>
@@ -11,18 +10,17 @@
 <body>
     <div class="page">
 
-        <!-- Header + navigation -->
+        <!-- Header + navigation (not funtional, # to be replaced with proper pages) -->
         <header>
             <h1 class="site-title">J's Gallery</h1>
-          <!-- navigation pannel with empty pages-->
             <nav>
-                <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="gallery.html">Gallery</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
             </nav>
         </header>
 
-        <!-- Top section: text left, cow image right -->
+        <!-- Top (hero) section: text left, cow image right -->
         <section id="home" class="hero">
             <div class="hero-text">
                 <p>
@@ -33,7 +31,6 @@
                     posuere dignissim morbi scelerisque. Fringilla primis sagittis lorem erat integer; vulputate nullam.
                     Porta purus habitant id fermentum nec ex, proin mauris sem.
                 </p>
-<br>
                 <p>
                     Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti. Non torquent amet nibh elit ante
                     fermentum praesent cras. Et suspendisse egestas eros erat aptent sollicitudin. Nulla tortor purus
@@ -42,7 +39,7 @@
             </div>
 
             <div class="hero-image">
-                <img src="COW.jpg" alt="Cow on the beach">
+                <img src="images/COW.jpg" alt="Cow on the beach">
             </div>
 
             <!-- Full-width paragraph spanning under both text and image -->
@@ -53,37 +50,37 @@
             </p>
         </section>
 
-        <!-- Gallery: same height, different widths in 3-column pattern -->
+        <!-- Gallery: same height, different widths in 3-column pattern. All media wes moved to a folder called images for cleaner look -->
         <section id="gallery" class="gallery">
 
             <!-- Row 1: wide video, normal image -->
             <figure class="gallery-item wide">
                 <video controls>
-                    <source src="video.mp4" type="video/mp4">
+                    <source src="images/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </figure>
 
             <figure class="gallery-item">
-                <img src="img4598.jpg" alt="Foggy bridge lights">
+                <img src="images/img4598.jpg" alt="Foggy bridge lights">
             </figure>
 
             <!-- Row 2: normal image, wide image -->
             <figure class="gallery-item">
-                <img src="img4532.jpg" alt="Vintage camera">
+                <img src="images/img4532.jpg" alt="Vintage camera">
             </figure>
 
             <figure class="gallery-item wide">
-                <img src="photo_2018_02_01.jpg" alt="Snowy forest">
+                <img src="images/photo_2018_02_01.jpg" alt="Snowy forest">
             </figure>
 
             <!-- Row 3: wide image, normal image -->
             <figure class="gallery-item wide">
-                <img src="photo_2018_02_31.jpg" alt="Hills landscape">
+                <img src="images/photo_2018_02_31.jpg" alt="Hills landscape">
             </figure>
 
             <figure class="gallery-item">
-                <img src="johns car jpg.jpg" alt="Old building with cars">
+                <img src="images/johns car jpg.jpg" alt="Old building with cars">
             </figure>
 
         </section>
